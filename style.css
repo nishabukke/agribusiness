@@ -60,6 +60,9 @@ ul{
     align-items: center;
 }
 
+/* .logo img{
+    width: 10%;
+} */
 
 /* menu */
 
@@ -181,7 +184,7 @@ ul{
     padding: 15px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    color: #444;
+    color: #007b52;
 }
 
 .main-menu .sub-menu li:last-child {
@@ -228,7 +231,7 @@ ul{
 
 .common-btn{
     padding: 15px 45px;
-    background-color: #444;
+    background-color: #007b52;
     color: #fff;
     display: flex;
     width: max-content;
@@ -244,8 +247,10 @@ ul{
 }
 
 .why-choose-img1{
-    background-image: url('images/How-we-work-01.jpg');
+    background-image: url('images/agri-home.avif');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
     height: 500px;
     position: relative;
 }
@@ -271,7 +276,7 @@ ul{
     display: inline-block;
     vertical-align: top;
     overflow: hidden;
-    background-color: #444;
+    background-color: #007b52;
 }
 
 .radiantthemes-separator.element-one > .radiantthemes-separator-block > .radiantthemes-separator-block-gap {
@@ -289,7 +294,7 @@ ul{
 }
 
 .heading-common{
-    color: #444;
+    color: #007b52;
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -313,15 +318,15 @@ ul{
 }
 
 .why-choose-btn span{
-    border: 1px solid #444;
-    color: #444;
+    border: 1px solid #007b52;
+    color: #007b52;
     border-radius: 50%;
     padding: 8px;
 }
 
 #watch-tutorial{
     padding-bottom: 5px;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #007b52;
 }
 
 
@@ -491,8 +496,8 @@ ul{
     transition: transform 1s cubic-bezier(.23, .02, 0, .75);
 }
 
-.product-img{
-    background-image: url('images/New-Course-02.jpg');
+.product-img1, .product-img2, .product-img3,.product-img4, .product-img5, .product-img6, .product-img7, .product-img8, .product-img9, .product-img10, .product-img11, .product-img12, .product-img13, .product-img14, .product-img15{
+    background-image: url('images/top-food.jpeg');
     position: absolute;
     top: 0;
     right: 0;
@@ -501,16 +506,73 @@ ul{
     z-index: 1;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
 }
+
+.product-img2{
+    background-image: url('images/agri-business-ideas.jpeg');
+}
+
+.product-img3{
+    background-image: url('images/eccomerce-business-ideas.jpeg');
+}
+
+.product-img4{
+    background-image: url('images/nutritional-products.jpeg');
+}
+
+.product-img5{
+    background-image: url('images/agri-business-ideas-product.jpeg');
+}
+
+.product-img6{
+    background-image: url('images/achieve-profit.jpeg');
+}
+
+.product-img7{
+    background-image: url('images/digital-agribusiness.jpeg');
+}
+
+.product-img8{
+    background-image: url('images/digital-marketing-formula.jpeg');
+}
+
+.product-img9{
+    background-image: url('images/nutrition-food-product.jpeg');
+}
+
+.product-img10{
+    background-image: url('images/eccomerce-business-product.jpeg');
+}
+
+.product-img11{
+    background-image: url('images/estore-blueprint.jpeg');
+}
+
+.product-img12{
+    background-image: url('images/phygital-sales.jpeg');
+}
+
+.product-img13{
+    background-image: url('images/product-selection-formula.jpeg');
+}
+
+.product-img14{
+    background-image: url('images/target-market-formula.jpeg');
+}
+
+.product-img15{
+    background-image: url('images/top-food-product.jpeg');
+}
+
 
 .prod-price{
     position: absolute;
     top: 0;
     right: 0;
-    background: #444;
+    background: #007b52;
     z-index: 9;
     padding: 3px 25px;
     margin: 24px 22px 0 0;
@@ -615,9 +677,9 @@ input[type='text']:focus, input[type='tel']:focus, input[type='email']:focus{
 }
 
 input[type='submit']{
-    background-color: #ffbb88;
+    background-color: #007b52;
     font-weight: 600;
-    color: #444;
+    color: #fff;
     padding: 12px 45px;
     border-radius: 10px;
     border: none;
@@ -639,8 +701,8 @@ input[type='submit']{
     transition: all 1.5s cubic-bezier(0, 0, .2, 1);
 }
 
-.pic-main{
-    background-image: url('images/event.jpg');
+.pic-main1, .pic-main2, .pic-main3, .pic-main4{
+    background-image: url('images/akashwani.jpeg');
     position: absolute;
     top: 0;
     right: 0;
@@ -653,7 +715,19 @@ input[type='submit']{
     transition: all 1.5s cubic-bezier(0, 0, .2, 1);
 }
 
-.event-holder:hover .pic-main {
+.pic-main2{
+    background-image: url('images/jalkot-event.jpeg');
+}
+
+.pic-main3{
+    background-image: url('images/nanded-event.jpeg');
+}
+
+.pic-main4{
+    background-image: url('images/training-event.jpeg');
+}
+
+.event-holder:hover .pic-main1, .event-holder:hover .pic-main2, .event-holder:hover .pic-main3, .event-holder:hover .pic-main4 {
     cursor: pointer;
     transform: scale3d(1.1, 1.1, 1.1);
 }
@@ -678,9 +752,9 @@ ul.meta{
 }
 
 .event-title{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 22px;
     letter-spacing: 0;
     color: #222;
     margin-bottom: 9px;
@@ -736,7 +810,7 @@ ul.meta{
 
 
 .footer-section{
-    background-color: #222;
+    background-color: #007b52;
     color: #fff;
 }
 
@@ -752,13 +826,17 @@ ul.meta{
 }
 
 .footer-section p, .footer-section ul li a{
-    color: #a3a2a2;
+    color: #fff;
 }
 
 .footer-section ul li{
     padding: 5px 0px;
 }
 
+.contact-footer-content p:hover{
+    color: #fff;
+    transition: all .3s ease;
+}
 
 .footer-section .row .col-lg-5 img{
     border: 5px solid #d0d0d7;
@@ -768,7 +846,7 @@ ul.meta{
     position: relative;
     border-style: solid;
     border-width: 1px 0 0;
-    border-color: #373737;
+    border-color: #efb333;
     transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
     margin-top: 0;
     margin-bottom: 0;
@@ -784,6 +862,9 @@ ul.meta{
 .social-accounts{
     display: flex;
     gap: 20px;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
 }
 
 /* fade effects */

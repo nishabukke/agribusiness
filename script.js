@@ -18,12 +18,12 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
 $(window).on("scroll touchmove", function() {
 
     if ($(document).scrollTop() > $(".main-inner").position().top) {
-      $('.main-inner').css('background', '#fff');
+      $('.main-inner').css('background', '#efb333');
       $('.main-inner').css('z-index', '1111');
-      $('.main-menu .navbar-nav .nav-link').css('color', '#444');
-      $('.sub-nav-toggler').css('color', '#444');
-      $('.header-right a').css('color', '#444');
-      $('.header-right a').css('border-color', '#444');
+      $('.main-menu .navbar-nav .nav-link').css('color', '#fff');
+      $('.sub-nav-toggler').css('color', '#fff');
+      $('.header-right a').css('color', '#fff');
+      $('.header-right a').css('border-color', '#fff');
       $('.main-inner').css('box-shadow', '0px 0px 20px rgba(0, 0, 0, 0.075)');
     }
     else{
