@@ -32,7 +32,7 @@ ul{
 }
 
 .header-area{
-    background-image: url('images/farm-banner3.jpg');
+    background-image: url('images/home-banner.jpg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,6 +48,7 @@ ul{
 }
 
 .main-inner{
+    background-color: rgba(255,255,255,0.7);
     position: fixed;
     left: 0;
     right: 0;
@@ -60,9 +61,17 @@ ul{
     align-items: center;
 }
 
-/* .logo img{
-    width: 10%;
-} */
+.logo img{
+    width: 50px;
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+}
+
+.logo span{
+    color: #007b52;
+    font-size: 14px;
+    margin-left: 5px;
+}
 
 /* menu */
 
@@ -71,7 +80,7 @@ ul{
 }
 
 .main-menu li.nav-item:hover > a {
-    color: #fff;
+    color: #007b52;
 }
 
 .main-menu .sub-menu li:hover > a {
@@ -92,9 +101,10 @@ ul{
 .main-menu .navbar-nav .nav-link {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+    font-weight: bold;
     display: block;
     /* padding: 20px 0; */
-    color: #fff;
+    color: #007b52;
 }
 
 .main-menu .navbar-nav .nav-link::before {
@@ -103,7 +113,7 @@ ul{
     width: 100%;
     height: 4px;
     border-radius: 4px;
-    background-color: #222;
+    background-color: #007b52;
     bottom: 0;
     left: 0;
     transform-origin: right;
@@ -193,8 +203,8 @@ ul{
 
 .header-right a{
     padding: 10px 15px;
-    color: #fff;
-    border: 1px solid #fff;
+    color: #007b52;
+    border: 1px solid #007b52;
     font-size: 14px;   
     vertical-align: top;
     text-align: center;
@@ -650,10 +660,11 @@ ul{
     left: 5%;
 }
 
-.contact-form{
+.contact-form {
     top: 50%;
     position: absolute;
-    left: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .contact-form form{
@@ -792,18 +803,20 @@ ul.meta{
 
 .event-holder:hover .read-more .arrow{
     width: 60px;
-    background-color: #015abd !important;
+    background-color: #007b52 !important;
 }
 
 .event-holder:hover .read-more .text{
-    color: #015abd;
+    color: #007b52;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
     bottom: -7px;
 }
 
-
+.swiper-pagination-bullet-active{
+    background-color: #007b52;
+}
 
 
 /* footer section */
@@ -816,6 +829,18 @@ ul.meta{
 
 .footer-inner{
     padding: 87px 15px;
+}
+
+.footer-logo img{
+    width: 70px;
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+}
+
+.footer-logo{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 5px;
 }
 
 .footer-section h4{
