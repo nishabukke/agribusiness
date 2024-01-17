@@ -216,9 +216,9 @@ ul{
     transform: translateY(-5px);
 }
 
-.common-container{
+/* .common-container{
     max-width: 1240px;
-}
+} */
 
 
 .banner-content{
@@ -245,6 +245,13 @@ ul{
     color: #fff;
     display: flex;
     width: max-content;
+    transition: .3s all ease;
+}
+
+.common-btn:hover{
+    background-color:#fff;
+    color: #007b52;
+    border: 1px solid #007b52;
 }
 
 
@@ -337,6 +344,10 @@ ul{
 #watch-tutorial{
     padding-bottom: 5px;
     border-bottom: 1px solid #007b52;
+}
+
+#watch-tutorial:hover{
+    color: #007b52;
 }
 
 
