@@ -31,8 +31,12 @@ ul{
     margin: 0;padding: 0;
 }
 
+.mobile-header{
+    display: none;
+}
+
 .header-area{
-    background-image: url('images/home-banner.jpg');
+    background-image: url('images/home-banner.jpeg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,7 +65,7 @@ ul{
     align-items: center;
 }
 
-.logo img{
+.logo img, .mobile-logo img{
     width: 50px;
     border-right: 1px solid #fff;
     padding-right: 10px;
@@ -89,9 +93,9 @@ ul{
 }
 
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
     background-image: none;
-}
+} */
 
 .main-menu li.nav-item {
     position: relative;
@@ -232,11 +236,11 @@ ul{
 
 
 .banner-content h1{
-    width: 90%;
-    font-size: 48px;
+    width: 100%;
+    font-size: 64px;
     font-family: 'Jost';
-    font-weight: 600;
-    line-height: 55px;
+    font-weight: 800;
+    line-height: 64px;
 }
 
 .common-btn{
@@ -264,7 +268,7 @@ ul{
 }
 
 .why-choose-img1{
-    background-image: url('images/agri-home.avif');
+    background-image: url('images/agri-home.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -280,7 +284,7 @@ ul{
 }
 
 .why-choose-img2{
-    background-image: url('images/How-we-work-02.jpg');
+    background-image: url('images/How-we-work-02.png');
     background-repeat: no-repeat;
     height: 250px;
     position: relative;
@@ -303,6 +307,12 @@ ul{
     width: 12px;
     background-color: #fff;
     animation: RadiantThemesSeparatorAnimation 1.5s infinite ease-in-out;
+}
+
+.section-p{
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
 }
 
 
@@ -355,7 +365,7 @@ ul{
 
 
 .courses-section{
-    background-color: #eaeaea;
+    background-color: #e1f7f0;
     transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
     margin-top: 0;
     margin-bottom: 0;
@@ -433,19 +443,17 @@ ul{
     position: absolute;
     bottom: 0;
     width: 100%;
-    z-index: 9;
+    z-index: 9999;
     margin-bottom: 8px;
     padding: 0 15px;
 }
 
 .data h3{
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
     color: #fff;
     padding: 0 0 0px 0;
     margin: 0 !important;
-    text-transform: uppercase;
     -webkit-transform: translateY(0);
     transform: translateY(0);
     transition: all .5s ease-in-out;
@@ -656,7 +664,7 @@ ul{
 
 /* contact section */
 
-.contact-img{
+.contact-section{
     position: relative;
 }
 
@@ -723,7 +731,7 @@ input[type='submit']{
     transition: all 1.5s cubic-bezier(0, 0, .2, 1);
 }
 
-.pic-main1, .pic-main2, .pic-main3, .pic-main4{
+.pic-main1, .pic-main2, .pic-main3, .pic-main4, .pic-main5, .pic-main6, .pic-main7{
     background-image: url('images/akashwani.jpeg');
     position: absolute;
     top: 0;
@@ -749,7 +757,21 @@ input[type='submit']{
     background-image: url('images/training-event.jpeg');
 }
 
-.event-holder:hover .pic-main1, .event-holder:hover .pic-main2, .event-holder:hover .pic-main3, .event-holder:hover .pic-main4 {
+.pic-main5{
+    background-image: url('images/udyog-bhavan-nanded.jpeg');
+}
+
+.pic-main6{
+    background-image: url('images/mscd-parbhani.jpeg');
+}
+
+.pic-main7{
+    background-image: url('images/akashwani-event2.jpeg');
+}
+
+
+
+.event-holder:hover .pic-main1, .event-holder:hover .pic-main2, .event-holder:hover .pic-main3, .event-holder:hover .pic-main4, .event-holder:hover .pic-main5, .event-holder:hover .pic-main6, .event-holder:hover .pic-main7 {
     cursor: pointer;
     transform: scale3d(1.1, 1.1, 1.1);
 }
@@ -982,5 +1004,135 @@ ul.meta{
     100% {
         opacity: 1;
         transform: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .mobile-header{
+        display: flex;
+        background-color: rgba(255,255,255,0.7);
+    }
+
+    .navbar-toggler{
+        border: none;
+        background-color: none;
+    }
+
+    .mobile-logo span{
+        font-size: 14px;
+        color: #007b52;
+    }
+
+    .navbar-nav .nav-link{
+        color: #007b52;
+    }
+
+    .navbar-nav .nav-link.active{
+        color: #007b52;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .mobile-header{
+        display: flex;
+        background-color: rgba(255,255,255,0.7);
+    }
+
+    .navbar-toggler{
+        border: none;
+        background-color: none;
+    }
+
+    .mobile-logo span{
+        font-size: 14px;
+        color: #007b52;
+    }
+
+    .navbar-nav .nav-link{
+        color: #007b52;
+    }
+
+    .navbar-nav .nav-link.active{
+        color: #007b52;
+        font-weight: 700;
+    }
+
+    .main-inner{
+        display: none;
+    }
+
+    .banner-content {
+        padding: 170px 50px 50px;
+        width: 100%;
+    }
+
+    .banner-content h1 {
+        width: 100%;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 24px;
+    }
+
+    .why-choose-img1 {
+        height: 250px;
+    }
+
+    .why-choose-img2{
+        display: none;
+    }
+
+    .why-choose-section, .courses-section, .products-section, .event-section, .contact-section {
+        padding: 60px 0 60px;
+    }
+
+    .why-choose-desc h2 {
+        margin-bottom: 0px;
+    }
+
+    .why-choose-content {
+        padding-top: 60px;
+    }
+
+    .common-btn {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+
+    .section-p{
+        width: 100%;
+    }
+
+    .event-holder{
+        height: auto !important;
+    }
+
+    .products-section .row{
+        gap: 20px;
+    }
+
+    .contact-form form {
+        flex-direction: column;
+    }
+
+    .contact-section{
+        display: none;
+    }
+
+    .swiper.mySwiper{
+        padding: 50px;
+    }
+
+    .footer-inner{
+        text-align: center !important;
+    }
+
+    .bottom-footer .common-container{
+        flex-direction: column;
+        text-align: center;
+        font-size: 12px;
+        gap: 15px;
     }
 }
