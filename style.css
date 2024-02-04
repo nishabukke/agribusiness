@@ -230,17 +230,24 @@ ul{
     flex-direction: column;
     padding: 200px 0 270px;
     color: #fff;
-    width: 40%;
+    width: calc(60% - 80px);
     padding-left: 80px;
 }
 
 
 .banner-content h1{
     width: 100%;
-    font-size: 64px;
+    font-size: 50px;
     font-family: 'Jost';
+    background-color: rgb(239, 179, 51, .7);
     font-weight: 800;
-    line-height: 64px;
+    line-height: 50px;
+    padding: 25px 30px;
+    border-radius: 12px;
+}
+
+.banner-content p{
+    font-size: 18px;
 }
 
 .common-btn{
@@ -1074,6 +1081,11 @@ ul.meta{
         font-size: 24px;
         font-weight: 800;
         line-height: 24px;
+    }
+
+    .banner-content p{
+        font-size: 12px;
+        line-height: normal;
     }
 
     .why-choose-img1 {
