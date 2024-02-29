@@ -1044,16 +1044,45 @@ ul.meta{
     }
 }
 
+
+
 @media screen and (max-width: 768px) {
 
     .mobile-header{
         display: flex;
         background-color: rgba(255,255,255,0.7);
     }
+    
+    .main-inner-pages, .about-img2{
+        display: none;
+    }
 
     .navbar-toggler{
         border: none;
         background-color: none;
+    }
+
+    .banner-content{
+        padding: 70px 40px 50px;
+        width: auto;
+    }
+
+    .why-choose-content{
+        padding-top: 0;
+        padding-left: 20px;
+    }
+    
+    .why-choose-section, .courses-section, .products-section, .event-section, .contact-section, .philosophy-section, .event-page-section, .contact-form-section  {
+        padding: 60px 30px;
+    }
+
+    .prod-data {
+        margin: 0 5px 0px 5px;
+        padding: 0px 15px;
+    }
+
+    .contact-section{
+        display: none;
     }
 
     .mobile-logo span{
@@ -1068,6 +1097,142 @@ ul.meta{
     .navbar-nav .nav-link.active{
         color: #007b52;
         font-weight: 700;
+    }
+    
+    .about-desc p, .points-title p, .highlights p{
+        text-align: justify;
+    }
+    
+    .service-title-desc {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .philosophy-section .card{
+        margin-bottom: 20px;
+    }
+
+    .video-section{
+        margin: 0;
+    }
+
+    .why-choose-content{
+        text-align: center;
+    }
+
+
+    .section-p, .event-title-desc{
+        width: 100%;
+    }
+
+    .about-section-inner .row.mt-5{
+        margin-top: 0px !important;
+        text-align: justify;
+    }
+
+    .abt-why-choose{
+        display: none;
+    }
+    
+    .event-title {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .read-more{
+        font-size: 12px;
+        line-height: none;
+        letter-spacing: 1px;
+    }
+
+    .event-holder{
+        height: auto !important;
+    }
+
+    /* event css */
+
+    .event-banner-content h1 {
+        width: 100%;
+        font-family: 'Jost';
+        text-transform: capitalize;
+        line-height: normal;
+    }
+
+    .event-page-section h2{
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .event-item{
+        width: 100%;
+    }
+
+    .event-banner-content .common-container {
+         padding-top: 0px;
+    }
+
+    .event-date-number{
+        font-size: 24px;
+        line-height: normal;
+        margin-right: 10px;
+    }
+
+    .event-title-part{
+        padding: 10px;
+    }
+
+
+    /* contact page css */
+
+    .contact-form-section .contact-form{
+        margin-top: 0;
+        padding: 30px 10px 40px 10px !important;
+    }
+
+    .contact-form form {
+        flex-direction: column;
+    }
+
+    .contact-details img{
+        width: 35px;
+    }
+
+    .contact-page-desc p, .contact-page-desc a{
+        font-size: 14px;
+    }
+
+    .contact-details{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .contact-section{
+        display: none;
+    }
+
+
+    .footer-inner{
+        text-align: center !important;
+        padding: 40px 0px;
+    }
+
+    .footer-inner ul{
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    .bottom-footer .common-container{
+        flex-direction: column;
+        text-align: center;
+        font-size: 12px;
+        gap: 15px;
     }
 }
 

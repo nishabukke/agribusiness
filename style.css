@@ -1020,10 +1020,41 @@ ul.meta{
         display: flex;
         background-color: rgba(255,255,255,0.7);
     }
+    
+    .main-inner, .why-choose-img2{
+        display: none;
+    }
+
+    .col-md-2{
+        display: none;
+    }
 
     .navbar-toggler{
         border: none;
         background-color: none;
+    }
+
+    .banner-content{
+        padding: 70px 40px 50px;
+        width: auto;
+    }
+
+    .why-choose-content{
+        padding-top: 0;
+        padding-left: 20px;
+    }
+    
+    .why-choose-section, .courses-section, .products-section, .event-section, .contact-section {
+        padding: 60px 30px;
+    }
+
+    .prod-data {
+        margin: 0 5px 0px 5px;
+        padding: 0px 15px;
+    }
+
+    .contact-section{
+        display: none;
     }
 
     .mobile-logo span{
@@ -1038,6 +1069,24 @@ ul.meta{
     .navbar-nav .nav-link.active{
         color: #007b52;
         font-weight: 700;
+    }
+
+    .footer-inner{
+        text-align: center !important;
+        padding: 40px 0px;
+    }
+
+    .footer-inner ul{
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    .bottom-footer .common-container{
+        flex-direction: column;
+        text-align: center;
+        font-size: 12px;
+        gap: 15px;
     }
 }
 
