@@ -1097,7 +1097,21 @@ ul.meta{
     }
 
     .why-choose-section, .courses-section, .products-section, .event-section, .contact-section {
-        padding: 60px 0 60px;
+        padding: 60px 30px;
+        text-align: center;
+    }
+
+    .why-choose-btn {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .fa-solid.fa-play{
+        display: none;
+    }
+
+    .prod-data {
+        margin: 0 18px 0px 18px;
     }
 
     .why-choose-desc h2 {
@@ -1134,11 +1148,23 @@ ul.meta{
     }
 
     .swiper.mySwiper{
-        padding: 50px;
+        padding: 30px;
+    }
+
+    .event-title {
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .footer-inner{
         text-align: center !important;
+        padding: 40px 0px;
+    }
+
+    .footer-inner ul{
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
     }
 
     .bottom-footer .common-container{
@@ -1147,4 +1173,5 @@ ul.meta{
         font-size: 12px;
         gap: 15px;
     }
+
 }

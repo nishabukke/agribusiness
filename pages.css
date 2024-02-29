@@ -1103,8 +1103,9 @@ ul.meta{
         display: none;
     }
 
-    .about-section, .event-section, .video-section, .event-banner-content, .event-page-section, .contact-form-section, .contact-map-section, .contact-banner-content{
-        padding: 60px 0 60px;
+    .about-section, .event-section, .video-section, .event-banner-content, .event-page-section, .contact-form-section, .contact-map-section, .contact-banner-content, .philosophy-section{
+        padding: 60px 30px;
+        text-align: center;
     }
 
     .about-img1{
@@ -1113,7 +1114,8 @@ ul.meta{
     }
 
     .about-img2{
-        right: -10%;
+        right: -21%;
+        background-size: contain;
     }
 
     .about-content {
@@ -1129,9 +1131,25 @@ ul.meta{
         font-size: 14px;
     }
 
+    .service-title-desc {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 600;
+        width: 100%;
+    }
+
     .philosophy-section .card{
         margin-bottom: 20px;
     }
+
+    .video-section{
+        margin: 0;
+    }
+
+    .why-choose-content{
+        text-align: center;
+    }
+
 
     .section-p, .event-title-desc{
         width: 100%;
@@ -1143,7 +1161,8 @@ ul.meta{
     }
     
     .event-title {
-        font-size: 14px;
+        font-size: 16px;
+        text-align: center;
         font-weight: 500;
         line-height: normal;
     }
@@ -1167,6 +1186,11 @@ ul.meta{
         line-height: normal;
     }
 
+    .event-page-section h2{
+        font-size: 24px;
+        line-height: normal;
+    }
+
     .event-banner-content .common-container {
          padding-top: 0px;
     }
@@ -1186,10 +1210,7 @@ ul.meta{
 
     .contact-form-section .contact-form{
         margin-top: 0;
-    }
-
-    .contact-desc p, .form-content p{
-        text-align: justify;
+        padding: 30px 10px 40px 10px !important;
     }
 
     .contact-form form {
@@ -1205,7 +1226,7 @@ ul.meta{
     }
 
     .contact-details{
-        justify-content: unset;
+        flex-direction: column;
         gap: 10px;
         margin-top: 15px;
     }
@@ -1215,17 +1236,20 @@ ul.meta{
     }
 
     .swiper.mySwiper{
-        padding: 50px;
-    }
-
-    .footer-section ul li a{
-        font-size: 14px;
+        padding: 30px;
     }
 
     .footer-inner{
         text-align: center !important;
-        padding: 60px 0px 60px;
+        padding: 40px 0px;
     }
+
+    .footer-inner ul{
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
     .footer-navigation{
         margin-bottom: 10px;
     }
